@@ -92,6 +92,19 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 15px;
 }
 
+#video-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
 .gtco-nav {
   position: absolute;
   top: 0;
@@ -236,9 +249,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
-#gtco-header {
-  background: #4d4d4d;
-}
+
 @media screen and (max-width: 992px) {
   #gtco-header.gtco-cover {
     height: inherit !important;
@@ -384,7 +395,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
-.gtco-video.gtco-video-sm {
+/* .gtco-video.gtco-video-sm {
   height: 250px;
 }
 .gtco-video a {
@@ -434,7 +445,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
-}
+} */
 
 .gtco-cover {
   height: 900px;
