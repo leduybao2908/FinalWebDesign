@@ -1899,3 +1899,267 @@ form label {
   }
 }
 
+
+#testimonials{
+  .testimonials-heading
+  {
+    font-family: poppins;
+    box-sizing: border-box;
+  }
+  #testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+  .testimonials-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials-heading h1{
+    font-size: 5.0rem;
+    font-weight: 500;
+    background-color: #0095f8;
+    color: #FFFFFF;
+    padding: 10px 20px;
+  }
+  .testimonials-heading span{
+    font-size: 4.5rem;
+    color: #252525;
+    margin-bottom: 10px ;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+  }
+  .profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+    overflow: hidden;
+  }
+  .profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .profile{
+    display: flex;
+    align-items: center;
+  }
+  .name-user{
+    display: flex;
+  }
+  .name-user strong{
+    color: #000000;
+    font-size: 2.0rem;
+    letter-spacing: 0.5px;
+  }
+  .name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+    
+  }
+  .reviews{
+    color: #000000;
+  }
+  .location{
+    margin-top: 50px;
+    color: #008ee0;
+   
+  }
+  .location-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .location a{
+    font-size: large;
+    font-family: Roboto;
+  }
+  .box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .client-comment{
+    font-size: 2.5rem;
+    color:#4b4b4b;
+  }
+  .testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s ;
+  }
+  
+  @media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+  }
+  @media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+  }
+  @media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+  }
+  ::selection{
+    color: #ffffff;
+    background-color: #09C6AB;
+  }
+  
+  }
+
+  #weather-card{
+
+    .weather-panel-row {
+      margin-bottom: 50px; /* khoảng cách giữa các hàng */
+    }
+  
+    .weather-panel {
+      padding: 50px; /* khoảng cách bên trong mỗi div */
+      border: 1px solid #ccc; /* thêm đường viền để dễ nhìn */
+      border-radius: 8px; /* góc bo tròn cho đẹp */
+      background-color: #f9f9f9; /* màu nền nhạt để nổi bật nội dung */
+      
+    }
+    .weather-panel:hover{
+      transform: translateY(-10px);
+      transition: all ease 0.3s ;
+    }
+  .col-xs-6 h2{
+    color: white;
+  }
+    .main {
+      margin-top: 50px;
+    }
+    .weather-panel {
+      background-image: url("https://static.vecteezy.com/system/resources/thumbnails/017/174/904/small_2x/bokeh-blur-of-lush-forest-vegetation-background-photo.jpg");
+      background-size: cover;
+      border-radius: 20px;
+      box-shadow: 25px 25px 40px 0px rgba(0,0,0,0.33);
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+      
+      small {
+        color: inherit;
+        font-size: 50%;
+      }
+      ul.forecast > li {
+        border-top: 1px solid #fff;
+      }
+      .temperature {
+        & > span {
+            font-size: 2em;
+        }
+      }
+    }
+  }
+
+  #voucher-3d-slide
+  {
+    div#carousel { 
+      perspective: 1200px; 
+      background: #100000; 
+      padding-top: 10%; 
+      font-size:0; 
+      margin-bottom: 3rem; 
+      overflow: hidden; 
+    }
+    figure#spinner { 
+      transform-style: preserve-3d; 
+      height: 300px; 
+      transform-origin: 50% 50% -500px; 
+      transition: 1s; 
+    } 
+    figure#spinner img { 
+      width: 40%; max-width: 425px; 
+      position: absolute; left: 30%;
+      transform-origin: 50% 50% -500px;
+      outline:1px solid transparent; 
+    }
+    figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+    }
+    figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+    figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+    figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+    figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+    figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+    figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+    figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+    div#carousel ~ span { 
+      color: #fff; 
+      margin: 5%; 
+      display: inline-block; 
+      text-decoration: none; 
+      font-size: 2rem; 
+      transition: 0.6s color; 
+      position: relative; 
+      margin-top: -6rem; 
+      border-bottom: none; 
+      line-height: 0; }
+    div#carousel ~ span:hover { color: #888; cursor: pointer; }
+  }
+  #voucher3dslider .item img {
+    width: 100%;
+    height: auto;
+  }
+
+      /* Custom CSS to adjust icon size */
+      .owl-prev, .owl-next {
+        margin-top: 30px;
+        font-size: 30px; /* Adjust this value to change icon size */
+        color: #09C6AB; /* Change icon color if needed */
+      }
+      .owl-prev:hover, .owl-next:hover {
+        color: red; /* Đổi màu thành màu đỏ khi hover */
+      }
+
+      
+      .item {
+        perspective: 1000px;
+      }
+      .item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s;
+      }
+      .item:hover img {
+        transform: rotateY(45deg);
+      }
