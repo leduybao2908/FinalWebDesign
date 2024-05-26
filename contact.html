@@ -1,22 +1,19 @@
 <!DOCTYPE HTML>
-<!--
-	Traveler by freehtml5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
--->
+
 <html>
-	<head>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Contact - 10GOAT</title>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0" nonce="DwbamXtt"></script>
+	<title>Contact - 10GOAT</title>
+	<div id="fb-root"></div>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0" nonce="DwbamXtt"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+	<meta name="description" content="Travel web design" />
+	<meta name="keywords" content="web design, HTML, Bootstrap, travel, Europe travel, travel website, travel guide, travel tips, Europe tours, holiday planning" />
+	<meta name="author" content="10-GoatTeam" />
 
-  	<!-- Facebook and Twitter integration -->
+	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -28,7 +25,7 @@
 	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -41,7 +38,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
-	<!-- Magnific Popup -->
+	<!-- Bootstrap Datepicker -->
 	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
 
 	<!-- Owl Carousel  -->
@@ -57,19 +54,48 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		.container-sub {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.form-sub {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 300px;
+		}
+		.form-sub label {
+			margin-top: 10px;
+		}
+		.form-sub input {
+			margin-bottom: 10px;
+			padding: 10px;
+			font-size: 16px;
+		}
+		.button-sub {
+			padding: 10px;
+			background-color: #f8b400;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		.button-sub:hover {
+			background-color: #d19700;
+		}
+	</style>
 
-	</head>
-	<body>
-		
-	<div class="gtco-loader"></div>
-	
-	<div id="page">
+</head>
+<body>
 
-	
-	<!-- <div class="page-inner"> -->
+<div class="gtco-loader"></div>
+
+<div id="page">
+
 	<nav class="gtco-nav" role="navigation">
 		<div class="gtco-container">
-			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
 					<div id="gtco-logo"><a href="index.html">Traveler <em>.</em></a></div>
@@ -88,27 +114,23 @@
 						</li>
 						<li><a href="pricing.html">Pricing</a></li>
 						<li class="active"><a href="contact.html">Contact</a></li>
-					</ul>	
+					</ul>
 				</div>
 			</div>
-			
 		</div>
 	</nav>
-	
+
 	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(images/img_bg_3.jpg)">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-left">
+				<div class="col-md-9 col-md-offset-0 text-left">
 					<div class="row row-mt-15em">
-
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
 							<span class="intro-text-small">Don't be shy</span>
-							<h1>Get In Touch</h1>	
+							<h1>Get In Touch</h1>
 						</div>
-						
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -118,108 +140,143 @@
 
 	<div class="fb-comments" data-href="http://127.0.0.1:5500/contact.html" data-width="100%" data-numposts="100"></div>
 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="outer-container">
+    <div class="inner-container">
+        <div class="container-sub">
+            <h1 style="color: #0b0b0b; font-size: 24px; font-weight: bold;">Feedback</h1>
+            <form class="form-sub">
+                <label class="label-sub" for="name">Response content</label>
+                <input class="input-sub" type="text" id="name" name="name" placeholder="Enter content">
+                <label class="label-sub" for="email">Email</label>
+                <input class="input-sub" type="email" id="email" name="email" placeholder="Enter your email">
+                <button class="button-sub" type="button" onclick="sendMessage()">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer id="gtco-footer" role="contentinfo">
+	<div class="gtco-container">
+		<div class="row row-p	b-md">
+			<div class="col-md-4">
+				<div class="gtco-widget">
+					<h3>About Us</h3>
+					<p>Welcome to 10GOAT, where we specialize in crafting exceptional travel experiences tailored to your preferences. With a passion for exploration and a commitment to excellence, we strive to redefine your travel expectations. Our dedicated team of travel experts ensures meticulous planning and personalized service, allowing you to discover the world with ease and confidence. Whether you're seeking cultural immersion, adventure, or relaxation, we are here to curate memorable journeys that leave a lasting impression. Discover how 10GOAT can turn your travel dreams into reality.</p>
 				</div>
+			</div>
+
+			<div class="col-md-2 col-md-push-1">
+				<div class="gtco-widget">
+					<h3>Destination</h3>
+					<ul class="gtco-footer-links">
+						<li><a href="#">Europe</a></li>
+						<li><a href="#">Australia</a></li>
+						<li><a href="#">Asia</a></li>
+						<li><a href="#">Canada</a></li>
+						<li><a href="#">Dubai</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-2 col-md-push-1">
+				<div class="gtco-widget">
+					<h3>Hotels</h3>
+					<ul class="gtco-footer-links">
+						<li><a href="#">Luxe Hotel</a></li>
+						<li><a href="#">Italy 5 Star hotel</a></li>
+						<li><a href="#">Dubai Hotel</a></li>
+						<li><a href="#">Deluxe Hotel</a></li>
+						<li><a href="#">BoraBora Hotel</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-md-push-1">
+				<div class="gtco-widget">
+					<h3>Get In Touch</h3>
+					<ul class="gtco-quick-contact">
+						<li><a href="#"><i class="icon-phone"></i> 0123456789</a></li>
+						<li><a href="#"><i class="icon-mail2"></i> info@10GOAT.co</li>
+						<li><a href="#"><i class="icon-chat"></i> 10GOAT</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<footer id="gtco-footer" role="contentinfo">
-		<div class="gtco-container">
-			<div class="row row-p	b-md">
-
-				<div class="col-md-4">
-					<div class="gtco-widget">
-						<h3>About Us</h3>
-						<p> Welcome to 10GOAT, where we specialize in crafting exceptional travel experiences tailored to your preferences. With a passion for exploration and a commitment to excellence, we strive to redefine your travel expectations. Our dedicated team of travel experts ensures meticulous planning and personalized service, allowing you to discover the world with ease and confidence. Whether you're seeking cultural immersion, adventure, or relaxation, we are here to curate memorable journeys that leave a lasting impression. Discover how 10GOAT can turn your travel dreams into reality </p>
-					</div>
-				</div>
-
-				<div class="col-md-2 col-md-push-1">
-					<div class="gtco-widget">
-						<h3>Destination</h3>
-						<ul class="gtco-footer-links">
-							<li><a href="#">Europe</a></li>
-							<li><a href="#">Australia</a></li>
-							<li><a href="#">Asia</a></li>
-							<li><a href="#">Canada</a></li>
-							<li><a href="#">Dubai</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-2 col-md-push-1">
-					<div class="gtco-widget">
-						<h3>Hotels</h3>
-						<ul class="gtco-footer-links">
-							<li><a href="#">Luxe Hotel</a></li>
-							<li><a href="#">Italy 5 Star hotel</a></li>
-							<li><a href="#">Dubai Hotel</a></li>
-							<li><a href="#">Deluxe Hotel</a></li>
-							<li><a href="#">BoraBora Hotel</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-md-push-1">
-					<div class="gtco-widget">
-						<h3>Get In Touch</h3>
-						<ul class="gtco-quick-contact">
-							<li><a href="#"><i class="icon-phone"></i> 0123456789</a></li>
-							<li><a href="#"><i class="icon-mail2"></i> info@10GOAT.co</li>
-							<li><a href="#"><i class="icon-chat"></i> 10GOAT</a></li>
-						</ul>
-					</div>
-				</div>
-
+		<div class="row copyright">
+			<div class="col-md-12">
+				<p class="pull-right">
+				<ul class="gtco-social-icons pull-right">
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-dribbble"></i></a></li>
+				</ul>
+				</p>
 			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12">
-					
-					<p class="pull-right">
-						<ul class="gtco-social-icons pull-right">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
 		</div>
-	</footer>
-	<!-- </div> -->
-
 	</div>
+</footer>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Datepicker -->
-	<script src="js/bootstrap-datepicker.min.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
+<div class="gototop js-top">
+	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
 
-	</body>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Datepicker -->
+<script src="js/bootstrap-datepicker.min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+<script>
+	(function () {
+		emailjs.init("OC0ZzwCSsAD2WU5w_");
+	})();
+
+	function sendMessage() {
+		var serviceID = "service_ctq346k";
+		var templateID = "template_eu9srdr";
+
+		var params = {
+			sendername: document.querySelector("#name").value,
+			senderemail: document.querySelector("#email").value,
+			subject: "New feedback!",
+			message: "Respone feedback:  " + document.querySelector("#name").value + " with email: " + document.querySelector("#email").value + "."
+		};
+
+		console.log(params);
+
+		emailjs.send(serviceID, templateID, params)
+				.then(function(response) {
+					alert("Email Sent Successfully");
+				}, function(error) {
+					console.error("Error:", error);
+					alert("Error Occurred, Please try again");
+				});
+	}
+</script>
+
+</body>
 </html>
-
