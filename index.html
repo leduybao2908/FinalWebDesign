@@ -52,10 +52,19 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+	<style>
+		.gtco-nav {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000; /* Ensure the nav is on top of other elements */
+			background-color: black; /* Add a background color to avoid transparency issues */
+		}
+
+		.gtco-container {
+			margin-top: 5px; /* Adjust this value based on the height of your nav bar to prevent content from being hidden behind the nav bar */
+		}
+	</style>
 
 	</head>
 	<body>
