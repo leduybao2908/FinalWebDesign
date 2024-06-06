@@ -63,7 +63,19 @@
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+<style>
+	.gtco-nav {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000; /* Ensure the nav is on top of other elements */
+			background-color: black; /* Add a background color to avoid transparency issues */
+		}
 
+		.gtco-container {
+			margin-top: 5px; /* Adjust this value based on the height of your nav bar to prevent content from being hidden behind the nav bar */
+		}
+</style>
 </head>
 
 <body>
